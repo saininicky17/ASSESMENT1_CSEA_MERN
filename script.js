@@ -14,7 +14,7 @@ document
 
     const resumePreview = document.getElementById("resume-preview");
     resumePreview.innerHTML = `
-      <p><h1>${name}</h1>
+      <center><p><h1>${name}</h1>
       <img src="${URL.createObjectURL(
         photo
       )}" alt="Profile Photo" style="width:150px;height:auto;">
@@ -25,7 +25,7 @@ document
       <h4>Experience</h4>
       <p>${experience}</p>
       <h4>Education</h4>
-      <p>${education}</p>
+      <p>${education}</p><center>
     `;
 
     document.getElementById("form-section").style.display = "none";
