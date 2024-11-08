@@ -14,18 +14,18 @@ document
 
     const resumePreview = document.getElementById("resume-preview");
     resumePreview.innerHTML = `
-      <center><h1>${name}</h1>
+      <p><h1>${name}</h1>
       <img src="${URL.createObjectURL(
         photo
       )}" alt="Profile Photo" style="width:150px;height:auto;">
-      <h4>Email: ${email}</h4>
-      <h4>Phone: ${phone}</h4>
-      <h4>LinkedIn: <a href="${linkedin}" target="_blank">${linkedin}</a></h4>
-      <h4>GitHub: <a href="${github}" target="_blank">${github}</a></h4>
+      <h4>Email:</h4> ${email}
+      <h4>Phone:</h4> ${phone}
+      <h4>LinkedIn:</h4> <a href="${linkedin}" target="_blank">${linkedin}</a>
+      <h4>GitHub:</h4> <a href="${github}" target="_blank">${github}</a>
       <h4>Experience</h4>
-      <h4>${experience}</h4>
+      <p>${experience}</p>
       <h4>Education</h4>
-      <h4>${education}</h4></center>
+      <p>${education}</p>
     `;
 
     document.getElementById("form-section").style.display = "none";
